@@ -1,0 +1,12 @@
+com/datasophon/domain/host/enums/HostState.class
+com/datasophon/domain/host/model/ServiceRole.class
+com/datasophon/domain/host/model/DynamicHostProp.class
+com/datasophon/domain/host/enums/MANAGED.class
+com/datasophon/domain/alert/model/AlertHistory.class
+com/datasophon/domain/alert/gateway/AlertHistoryGateway.class
+com/datasophon/domain/alert/model/Annotations.class
+com/datasophon/domain/alert/model/Alerts.class
+com/datasophon/domain/alert/model/AlertMessage.class
+com/datasophon/domain/host/gateway/HostGateway.class
+com/datasophon/domain/host/model/Host.class
+com/datasophon/domain/alert/model/AlertLabels.class
