@@ -2,3 +2,4 @@
 *.css linguist-language=java
 *.html linguist-language=java
 *.tar.gz filter=lfs diff=lfs merge=lfs -text
+datasophon-api/target/datasophon-manager-1.2.1.tar.gz filter=lfs diff=lfs merge=lfs -text
