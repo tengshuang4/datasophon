@@ -45,6 +45,7 @@ com/datasophon/worker/utils/FreemakerUtils.class
 com/datasophon/worker/strategy/ZkServerHandlerStrategy.class
 com/datasophon/worker/actor/FileOperateActor.class
 com/datasophon/worker/log/TaskLogFilter.class
+com/datasophon/worker/strategy/DSMasterHandlerStrategy$1.class
 com/datasophon/worker/strategy/Krb5KdcHandlerStrategy.class
 com/datasophon/worker/actor/StartServiceActor.class
 com/datasophon/worker/actor/SupervisorFunction.class
@@ -56,6 +57,7 @@ com/datasophon/worker/strategy/KAdminHandlerStrategy.class
 com/datasophon/worker/utils/TaskConstants.class
 com/datasophon/worker/handler/ConfigureServiceHandler.class
 com/datasophon/worker/strategy/HiveServer2HandlerStrategy.class
+com/datasophon/worker/strategy/DSMasterHandlerStrategy.class
 com/datasophon/worker/log/TaskLogDiscriminator.class
 com/datasophon/worker/strategy/KyuubiServerHandlerStrategy.class
 com/datasophon/worker/actor/LogActor.class
