@@ -82,7 +82,7 @@ public class ClusterGroupServiceImpl extends ServiceImpl<ClusterGroupMapper, Clu
             ActorRef unixGroupActor = ActorUtils.getRemoteActor(clusterHost.getHostname(), "unixGroupActor");
             CreateUnixGroupCommand createUnixGroupCommand = new CreateUnixGroupCommand();
             createUnixGroupCommand.setGroupName(groupName);
-            Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+            Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
             Future<Object> execFuture = Patterns.ask(unixGroupActor, createUnixGroupCommand, timeout);
             ExecResult execResult = null;
             try {
@@ -135,7 +135,7 @@ public class ClusterGroupServiceImpl extends ServiceImpl<ClusterGroupMapper, Clu
             ActorRef unixGroupActor = ActorUtils.getRemoteActor(clusterHost.getHostname(), "unixGroupActor");
             DelUnixGroupCommand delUnixGroupCommand = new DelUnixGroupCommand();
             delUnixGroupCommand.setGroupName(clusterGroup.getGroupName());
-            Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+            Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
             Future<Object> execFuture = Patterns.ask(unixGroupActor, delUnixGroupCommand, timeout);
             ExecResult execResult = null;
             try {
@@ -187,7 +187,7 @@ public class ClusterGroupServiceImpl extends ServiceImpl<ClusterGroupMapper, Clu
     private void createUnixGroup(String hostname, ActorRef unixGroupActor, String groupName) {
         CreateUnixGroupCommand createUnixGroupCommand = new CreateUnixGroupCommand();
         createUnixGroupCommand.setGroupName(groupName);
-        Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+        Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
         Future<Object> execFuture = Patterns.ask(unixGroupActor, createUnixGroupCommand, timeout);
         ExecResult execResult = null;
         try {

@@ -420,7 +420,7 @@ public class ProcessUtils {
                     "akka.tcp://datasophon@" + namenode.getHostname() + ":2552/user/worker/fileOperateActor");
             ActorSelection execCmdActor = ActorUtils.actorSystem.actorSelection(
                     "akka.tcp://datasophon@" + namenode.getHostname() + ":2552/user/worker/executeCmdActor");
-            Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+            Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
             FileOperateCommand fileOperateCommand = new FileOperateCommand();
             fileOperateCommand.setLines(list);
             fileOperateCommand.setPath(Constants.INSTALL_PATH + "/hadoop-3.3.6/etc/hadoop/" + type);

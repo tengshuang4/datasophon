@@ -60,7 +60,7 @@ public class HadoopUtils {
         ActorSelection execCmdActor = ActorUtils.actorSystem
                 .actorSelection("akka.tcp://datasophon@" + hostname + ":2552/user/worker/executeCmdActor");
         ExecuteCmdCommand command = new ExecuteCmdCommand();
-        Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+        Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
         ArrayList<String> commands = new ArrayList<>();
         commands.add(Constants.INSTALL_PATH + Constants.SLASH
                 + PackageUtils.getServiceDcPackageName(clusterInfo.getClusterFrame(), "YARN") + "/bin/yarn");

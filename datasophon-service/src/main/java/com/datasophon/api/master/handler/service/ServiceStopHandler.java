@@ -54,7 +54,7 @@ public class ServiceStopHandler extends ServiceHandler {
         }
         ActorSelection stopActor = ActorUtils.actorSystem.actorSelection(
                 "akka.tcp://datasophon@" + serviceRoleInfo.getHostname() + ":2552/user/worker/stopServiceActor");
-        Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+        Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
         Future<Object> startFuture = Patterns.ask(stopActor, serviceRoleOperateCommand, timeout);
         try {
             ExecResult execResult = (ExecResult) Await.result(startFuture, timeout.duration());

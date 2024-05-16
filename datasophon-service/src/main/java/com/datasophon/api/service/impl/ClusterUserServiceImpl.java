@@ -106,7 +106,7 @@ public class ClusterUserServiceImpl extends ServiceImpl<ClusterUserMapper, Clust
             createUnixUserCommand.setMainGroup(mainGroup.getGroupName());
             createUnixUserCommand.setOtherGroups(otherGroup);
 
-            Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+            Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
             Future<Object> execFuture = Patterns.ask(unixUserActor, createUnixUserCommand, timeout);
             ExecResult execResult = null;
             try {
@@ -179,7 +179,7 @@ public class ClusterUserServiceImpl extends ServiceImpl<ClusterUserMapper, Clust
             ActorSelection unixUserActor = ActorUtils.actorSystem.actorSelection(
                     "akka.tcp://datasophon@" + clusterHost.getHostname() + ":2552/user/worker/unixUserActor");
             DelUnixUserCommand createUnixUserCommand = new DelUnixUserCommand();
-            Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+            Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
             createUnixUserCommand.setUsername(clusterUser.getUsername());
             Future<Object> execFuture = Patterns.ask(unixUserActor, createUnixUserCommand, timeout);
             ExecResult execResult = null;
@@ -220,7 +220,7 @@ public class ClusterUserServiceImpl extends ServiceImpl<ClusterUserMapper, Clust
         createUnixUserCommand.setMainGroup(mainGroup.getGroupName());
         createUnixUserCommand.setOtherGroups(otherGroup);
 
-        Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+        Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
         Future<Object> execFuture = Patterns.ask(unixUserActor, createUnixUserCommand, timeout);
         ExecResult execResult = null;
         try {

@@ -72,7 +72,7 @@ public class ServiceStartHandler extends ServiceHandler {
                 logger.info("when serviceRoleInfo name is FlinkClient ,start to startActor!");
                 ActorSelection startActors = ActorUtils.actorSystem.actorSelection(
                         "akka.tcp://datasophon@" + serviceRoleInfo.getHostname() + ":2552/user/worker/startServiceActor");
-                Timeout timeouts = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+                Timeout timeouts = new Timeout(Duration.create(600, TimeUnit.SECONDS));
                 Await.result(Patterns.ask(startActors, serviceRoleOperateCommand, timeouts),timeouts.duration());
             }
 
@@ -85,7 +85,7 @@ public class ServiceStartHandler extends ServiceHandler {
         }
         ActorSelection startActor = ActorUtils.actorSystem.actorSelection(
                 "akka.tcp://datasophon@" + serviceRoleInfo.getHostname() + ":2552/user/worker/startServiceActor");
-        Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+        Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
         Future<Object> startFuture = Patterns.ask(startActor, serviceRoleOperateCommand, timeout);
         try {
             ExecResult startResult = (ExecResult) Await.result(startFuture, timeout.duration());

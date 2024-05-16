@@ -157,7 +157,7 @@ public class HostCheckActor extends UntypedActor {
               final ActorRef pingActor = ActorUtils.getRemoteActor(host.getHostname(), "pingActor");
               PingCommand pingCommand = new PingCommand();
               pingCommand.setMessage("ping");
-              Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+              Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
               Future<Object> execFuture = Patterns.ask(pingActor, pingCommand, timeout);
               ExecResult execResult = (ExecResult) Await.result(execFuture, timeout.duration());
               if (execResult.getExecResult()) {

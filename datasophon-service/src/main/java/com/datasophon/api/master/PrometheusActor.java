@@ -230,7 +230,7 @@ public class PrometheusActor extends UntypedActor {
                                 "akka.tcp://datasophon@"
                                         + prometheusInstance.getHostname()
                                         + ":2552/user/worker/alertConfigActor");
-                Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
+                Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
                 Future<Object> configureFuture = Patterns.ask(alertConfigActor, command, timeout);
                 ExecResult configResult =
                         (ExecResult) Await.result(configureFuture, timeout.duration());
