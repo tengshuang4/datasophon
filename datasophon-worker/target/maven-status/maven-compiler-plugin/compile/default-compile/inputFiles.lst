@@ -45,6 +45,7 @@
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/TezServerHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/log/TaskLogFilter.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/BEHandlerStrategy.java
+/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/DSMasterHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/FlinkHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/handler/ConfigureServiceHandler.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/KafkaHandlerStrategy.java
