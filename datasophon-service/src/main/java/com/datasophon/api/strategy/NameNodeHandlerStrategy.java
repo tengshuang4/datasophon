@@ -146,7 +146,7 @@ public class NameNodeHandlerStrategy extends ServiceHandlerAbstract implements S
                 ActorUtils.getRemoteActor(roleInstanceEntity.getHostname(), "nMStateActor");
         ExecuteCmdCommand cmdCommand = new ExecuteCmdCommand();
         cmdCommand.setCommandLine(commandLine);
-        Timeout timeout = new Timeout(Duration.create(30, TimeUnit.SECONDS));
+        Timeout timeout = new Timeout(Duration.create(300, TimeUnit.SECONDS));
         Future<Object> execFuture = Patterns.ask(execCmdActor, cmdCommand, timeout);
         try {
             ExecResult execResult = (ExecResult) Await.result(execFuture, timeout.duration());
