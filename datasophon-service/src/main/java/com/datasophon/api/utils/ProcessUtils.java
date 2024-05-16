@@ -423,7 +423,7 @@ public class ProcessUtils {
             Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
             FileOperateCommand fileOperateCommand = new FileOperateCommand();
             fileOperateCommand.setLines(list);
-            fileOperateCommand.setPath(Constants.INSTALL_PATH + "/hadoop-3.3.6/etc/hadoop/" + type);
+            fileOperateCommand.setPath(Constants.INSTALL_PATH + "/hadoop/etc/hadoop/" + type);
             Future<Object> future = Patterns.ask(actorSelection, fileOperateCommand, timeout);
             ExecResult fileOperateResult = (ExecResult) Await.result(future, timeout.duration());
             if (Objects.nonNull(fileOperateResult) && fileOperateResult.getExecResult()) {
@@ -431,7 +431,7 @@ public class ProcessUtils {
                 // 刷新白名单
                 ExecuteCmdCommand command = new ExecuteCmdCommand();
                 ArrayList<String> commands = new ArrayList<>();
-                commands.add(Constants.INSTALL_PATH + "/hadoop-3.3.6/bin/hdfs");
+                commands.add(Constants.INSTALL_PATH + "/hadoop/bin/hdfs");
                 commands.add("dfsadmin");
                 commands.add("-refreshNodes");
                 command.setCommands(commands);
