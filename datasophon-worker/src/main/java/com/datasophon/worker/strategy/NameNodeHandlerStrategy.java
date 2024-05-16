@@ -46,8 +46,8 @@ public class NameNodeHandlerStrategy extends AbstractHandlerStrategy implements 
                 ArrayList<String> commands = new ArrayList<>();
                 commands.add(workPath + "/bin/hdfs");
                 commands.add("namenode");
-                commands.add("-bootstrapStandby");
-                ExecResult execResult = ShellUtils.execWithStatus(workPath, commands, 30L, logger);
+                commands.add("-bootstrapStandby -force");
+                ExecResult execResult = ShellUtils.execWithStatus(workPath, commands, 180L, logger);
                 if (execResult.getExecResult()) {
                     logger.info("Namenode standby success");
                 } else {
