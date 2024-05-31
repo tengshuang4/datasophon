@@ -91,7 +91,7 @@
       "value": "",
       "configurableInWizard": true,
       "hidden": false,
-      "defaultValue": "\"-Dspark.history.ui.port=18080 -Dspark.history.fs.update.interval=10s -Dspark.history.retainedApplications=100 -Dspark.history.fs.logDirectory=hdfs://nameserver1:8020/tmp/spark-logs -Dspark.history.fs.cleaner.enabled=true -Dspark.history.fs.cleaner.interval=1h -Dspark.history.fs.cleaner.maxAge=2d\""
+      "defaultValue": "\"-Dspark.history.ui.port=18080 -Dspark.history.fs.update.interval=10s -Dspark.history.retainedApplications=100 -Dspark.history.fs.logDirectory=hdfs://nameservice1:8020/tmp/spark-logs -Dspark.history.fs.cleaner.enabled=true -Dspark.history.fs.cleaner.interval=1h -Dspark.history.fs.cleaner.maxAge=2d\""
     },
     {
       "name": "custom.spark.env.sh",
@@ -125,7 +125,7 @@
       "value": "",
       "configurableInWizard": true,
       "hidden": false,
-      "defaultValue": "hdfs://nameserver1:8020/tmp/spark-logs"
+      "defaultValue": "hdfs://nameservice1:8020/tmp/spark-logs"
     },
     {
       "name": "spark.eventLog.compress",

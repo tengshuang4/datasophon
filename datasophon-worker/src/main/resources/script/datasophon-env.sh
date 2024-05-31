@@ -3,7 +3,7 @@ CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 export JAVA_HOME CLASSPATH
 
 export KYUUBI_HOME=/data/apps/kyuubi
-export SPARK_HOME=/data/apps/spark
+export SPARK_HOME=/data/apps/spark3
 export PYSPARK_ALLOW_INSECURE_GATEWAY=1
 export HIVE_HOME=/data/apps/hive
 export KAFKA_HOME=/data/apps/kafka

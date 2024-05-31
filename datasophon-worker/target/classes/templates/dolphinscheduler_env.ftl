@@ -19,7 +19,7 @@
 export JAVA_HOME=${r"${JAVA_HOME"}:-/usr/local/jdk1.8.0_333}
 
 # Database related configuration, set database type, username and password
-export DATABASE=${r"${DATABASE"}:-mysql}
+export DATABASE=${r"${DATABASE"}:-postgresql}
 export SPRING_PROFILES_ACTIVE=${r"${DATABASE}"}
 export SPRING_DATASOURCE_URL="${databaseUrl}"
 export SPRING_DATASOURCE_USERNAME=${username}
