@@ -18,7 +18,7 @@
       },
       "cardinality": "1+",
       "jmxPort": "10019",
-      "logFile": "logs/kyuubi-server-${host}.out",
+      "logFile": "logs/kyuubi-kyuubi-org.apache.kyuubi.server.KyuubiServer-${host}.out",
       "startRunner": {
         "timeout": "60",
         "program": "bin/kyuubi",
