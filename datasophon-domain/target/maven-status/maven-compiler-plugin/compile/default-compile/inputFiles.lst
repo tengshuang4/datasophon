@@ -1,12 +1,12 @@
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/host/enums/HostState.java
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/alert/model/Alerts.java
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/host/model/DynamicHostProp.java
-/data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/alert/gateway/AlertHistoryGateway.java
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/alert/model/Annotations.java
+/data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/alert/gateway/AlertHistoryGateway.java
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/alert/model/AlertMessage.java
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/host/model/Host.java
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/alert/model/AlertHistory.java
-/data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/host/gateway/HostGateway.java
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/host/model/ServiceRole.java
+/data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/host/gateway/HostGateway.java
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/alert/model/AlertLabels.java
 /data/dev/datasophon/datasophon-domain/src/main/java/com/datasophon/domain/host/enums/MANAGED.java

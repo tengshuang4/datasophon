@@ -2,14 +2,14 @@
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/AppendLineStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/JournalNodeHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/ServiceRoleStrategyContext.java
-/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/handler/ServiceHandler.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/RemoteEventActor.java
+/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/handler/ServiceHandler.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/FEHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/ServiceRoleStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/LinkStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/StopServiceActor.java
-/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/HiveServer2HandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/utils/KerberosUtils.java
+/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/HiveServer2HandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/ConfigureServiceActor.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/AbstractHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/HbaseHandlerStrategy.java
@@ -20,8 +20,8 @@
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/RMStateActor.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/ZKFCHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/DownloadStrategy.java
-/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/log/TaskLogDiscriminator.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/UnixUserActor.java
+/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/log/TaskLogDiscriminator.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/StartServiceActor.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/ResourceStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/LogActor.java
@@ -32,8 +32,8 @@
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/ExecuteCmdActor.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/WorkerActor.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/HistoryServerHandlerStrategy.java
-/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/RangerAdminHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/utils/TaskConstants.java
+/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/RangerAdminHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/CheckServiceStatusActor.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/utils/FreemakerUtils.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/DataNodeHandlerStrategy.java
@@ -54,8 +54,8 @@
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/KyuubiServerHandlerStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/handler/InstallServiceHandler.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/ResourceManagerHandlerStrategy.java
-/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/NMStateActor.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/RestartServiceActor.java
+/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/NMStateActor.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/ShellStrategy.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/KerberosActor.java
 /data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/Krb5KdcHandlerStrategy.java
