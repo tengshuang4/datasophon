@@ -35,7 +35,7 @@ import akka.pattern.Patterns;
 import akka.util.Timeout;
 
 public class ServiceConfigureHandler extends ServiceHandler {
-
+    
     @Override
     public ExecResult handlerRequest(ServiceRoleInfo serviceRoleInfo) throws Exception {
         // config
@@ -50,7 +50,6 @@ public class ServiceConfigureHandler extends ServiceHandler {
         generateServiceConfigCommand.setServiceRoleName(serviceRoleInfo.getName());
         ActorSelection configActor = ActorUtils.actorSystem.actorSelection(
                 "akka.tcp://datasophon@" + serviceRoleInfo.getHostname() + ":2552/user/worker/configureServiceActor");
-
         Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
         Future<Object> configureFuture = Patterns.ask(configActor, generateServiceConfigCommand, timeout);
         try {
