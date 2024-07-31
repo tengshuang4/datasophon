@@ -178,7 +178,6 @@ if [ -z "$KAFKA_JMX_OPTS" ]; then
   KAFKA_JMX_OPTS="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false  -Dcom.sun.management.jmxremote.ssl=false "
 fi
 
-JMX_PORT=9999
 # JMX port to use
 if [  $JMX_PORT ]; then
   KAFKA_JMX_OPTS="$KAFKA_JMX_OPTS -Dcom.sun.management.jmxremote.port=$JMX_PORT "
@@ -237,7 +236,7 @@ fi
 
 # JVM performance options
 if [ -z "$KAFKA_JVM_PERFORMANCE_OPTS" ]; then
-  KAFKA_JVM_PERFORMANCE_OPTS="-server  -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+ExplicitGCInvokesConcurrent -Djava.awt.headless=true <#if javaSecurityKrb5Conf??>-Djava.security.krb5.conf=${javaSecurityKrb5Conf}</#if> <#if javaSecurityAuthLoginConfig??>-Djava.security.auth.login.config=${javaSecurityAuthLoginConfig}</#if>"
+  KAFKA_JVM_PERFORMANCE_OPTS="-server  -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+ExplicitGCInvokesConcurrent -XX:MaxInlineLevel=15 -Djava.awt.headless=true -XX:MaxDirectMemorySize=8192M <#if javaSecurityKrb5Conf??>-Djava.security.krb5.conf=${javaSecurityKrb5Conf}</#if> <#if javaSecurityAuthLoginConfig??>-Djava.security.auth.login.config=${javaSecurityAuthLoginConfig}</#if>"
 fi
 
 while [ $# -gt 0 ]; do

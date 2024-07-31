@@ -18,10 +18,10 @@ com/datasophon/dao/mapper/ClusterUserGroupMapper.class
 com/datasophon/dao/entity/ClusterVariable.class
 com/datasophon/dao/mapper/UserInfoMapper.class
 com/datasophon/dao/mapper/ClusterServiceRoleInstanceMapper.class
-com/datasophon/dao/entity/ClusterServiceRoleGroupConfig.class
 com/datasophon/dao/entity/ClusterRoleUserEntity.class
-com/datasophon/dao/model/ClusterQueueCapacityList.class
+com/datasophon/dao/entity/ClusterServiceRoleGroupConfig.class
 com/datasophon/dao/entity/ClusterServiceCommandHostEntity.class
+com/datasophon/dao/model/ClusterQueueCapacityList.class
 com/datasophon/dao/mapper/ClusterAlertQuotaMapper.class
 com/datasophon/dao/entity/ClusterAlertGroupMap.class
 com/datasophon/dao/mapper/ClusterGroupMapper.class
@@ -46,8 +46,8 @@ com/datasophon/dao/enums/CommandState.class
 com/datasophon/dao/enums/QuotaState.class
 com/datasophon/dao/entity/ClusterAlertHistory.class
 com/datasophon/dao/mapper/ClusterYarnQueueMapper.class
-com/datasophon/dao/mapper/ClusterServiceCommandMapper.class
 com/datasophon/dao/mapper/ClusterVariableMapper.class
+com/datasophon/dao/mapper/ClusterServiceCommandMapper.class
 com/datasophon/dao/entity/ClusterServiceInstanceConfigEntity.class
 com/datasophon/dao/entity/FrameServiceRoleEntity.class
 com/datasophon/dao/mapper/FrameServiceMapper.class
@@ -84,8 +84,8 @@ com/datasophon/dao/mapper/ClusterServiceRoleGroupConfigMapper.class
 com/datasophon/dao/mapper/NoticeGroupUserMapper.class
 com/datasophon/dao/enums/ServiceRoleState.class
 com/datasophon/dao/entity/NoticeGroupEntity.class
-com/datasophon/dao/entity/RoleInfoEntity.class
 com/datasophon/dao/entity/ClusterServiceCommandEntity.class
+com/datasophon/dao/entity/RoleInfoEntity.class
 com/datasophon/dao/alert/AlertHistoryGatewayImpl.class
 com/datasophon/dao/mapper/ClusterQueueCapacityMapper.class
 com/datasophon/dao/entity/ClusterYarnScheduler.class

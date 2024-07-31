@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.30">
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/StartServiceActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/FileOperateActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/AlertConfigActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/InstallServiceActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/StopServiceActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/ConfigureServiceActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/WorkerActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/UnixUserActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/UnixGroupActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/LogActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/RestartServiceActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/PingActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/KerberosActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/NMStateActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/ExecuteCmdActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/RMStateActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/CheckServiceStatusActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/RemoteEventActor.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/actor/SupervisorFunction.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/utils/FileUtils.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/utils/FreemakerUtils.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/utils/ActorUtils.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/utils/UnixUtils.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/utils/KerberosUtils.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/utils/TaskConstants.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/handler/InstallServiceHandler.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/handler/ServiceHandler.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/handler/ConfigureServiceHandler.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/log/TaskLogDiscriminator.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/log/TaskLogFilter.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/KyuubiServerHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/JournalNodeHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/AbstractHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/ResourceManagerHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/Krb5KdcHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/KafkaHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/ZKFCHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/NodeManagerHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/TezServerHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/ServiceRoleStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/FlinkHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/KAdminHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/DataNodeHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/ServiceRoleStrategyContext.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/ZkServerHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/FEObserverHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/DSMasterHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/HbaseHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/NameNodeHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/BEHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/DownloadStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/LinkStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/ResourceStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/AppendLineStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/ReplaceStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/EmptyStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/resource/ShellStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/RangerAdminHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/HiveServer2HandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/FEHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/strategy/HistoryServerHandlerStrategy.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/java/com/datasophon/worker/WorkerApplicationServer.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/test/com/datasophon/worker/handler/InstallServiceHandlerTest.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/test/com/datasophon/worker/handler/ConfigureServiceHandlerTest.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/test/com/datasophon/worker/test/MutilTemplateFileTest.java">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/test/com/datasophon/worker/test/FreemarkerTest.java">
+<error line="41" severity="warning" message="&apos;METHOD_DEF&apos; 前只应有一个空行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="52" severity="warning" message="还有陆续超过1空行之一。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="72" severity="warning" message="还有陆续超过1空行之一。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="124" severity="warning" message="还有陆续超过1空行之一。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="128" severity="warning" message="还有陆续超过1空行之一。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="188" severity="warning" message="&apos;METHOD_DEF&apos; 后只应有一个空行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/logback.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/datasophon-worker.sh">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/assembly.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/templates/alertmanager.yml">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/templates/alert.yml">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/jmx/jmx_exporter_config.yaml">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/script/md5.sh">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/script/sed_common.sh">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/script/host-info-collect.sh">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/script/keystore.sh">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/script/datasophon-env.sh">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/script/rackaware.sh">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/script/create_kdb.sh">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/node/arm/control.sh">
+</file>
+<file name="/data/dev/datasophon/datasophon-worker/src/main/resources/node/x86/control.sh">
+</file>
+</checkstyle>

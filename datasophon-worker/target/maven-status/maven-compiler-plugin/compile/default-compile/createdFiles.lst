@@ -34,8 +34,8 @@ com/datasophon/worker/strategy/ServiceRoleStrategy.class
 com/datasophon/worker/strategy/FEObserverHandlerStrategy.class
 com/datasophon/worker/actor/ConfigureServiceActor.class
 com/datasophon/worker/utils/KerberosUtils.class
-com/datasophon/worker/handler/InstallServiceHandler.class
 com/datasophon/worker/actor/AlertConfigActor.class
+com/datasophon/worker/handler/InstallServiceHandler.class
 com/datasophon/worker/actor/ExecuteCmdActor.class
 com/datasophon/worker/strategy/KafkaHandlerStrategy.class
 com/datasophon/worker/strategy/ZKFCHandlerStrategy.class
@@ -61,5 +61,5 @@ com/datasophon/worker/strategy/DSMasterHandlerStrategy.class
 com/datasophon/worker/log/TaskLogDiscriminator.class
 com/datasophon/worker/strategy/KyuubiServerHandlerStrategy.class
 com/datasophon/worker/actor/LogActor.class
-com/datasophon/worker/strategy/NameNodeHandlerStrategy.class
 com/datasophon/worker/strategy/resource/AppendLineStrategy.class
+com/datasophon/worker/strategy/NameNodeHandlerStrategy.class

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.30">
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterServiceRoleInstanceWebuisMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterServiceInstanceMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/FrameInfoMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterInfoMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterVariableMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/UserInfoMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterServiceRoleInstanceMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/NoticeGroupUserMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/SessionMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterServiceCommandHostMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterZkMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/FrameVersionMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/InstallStepMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterServiceRoleInstanceConfigMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterHostMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/FrameVersionServiceMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterRoleUserMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterServiceCommandHostCommandMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterServiceCommandMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/ClusterServiceInstanceConfigMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/AlertGroupMapper.xml">
+</file>
+<file name="/data/dev/datasophon/datasophon-infrastructure/src/main/resources/mapper/RoleInfoMapper.xml">
+</file>
+</checkstyle>

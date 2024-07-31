@@ -185,43 +185,6 @@ public class HostCheckActor extends UntypedActor {
                 }
             }
         } else {
-          // 没有 Prometheus？直接获取节点，通过 rpc 检测是否启动
-          List<ClusterHostDO> hosts = clusterHostService.getHostListByClusterId(clusterInfoEntity.getId());
-          List<ClusterHostDO> checkedHosts = new ArrayList<>(hosts.size());
-          for (ClusterHostDO host : hosts) {
-            if (hostInfo != null && !StringUtils.equals(host.getHostname(), hostInfo.getHostname())) {
-              // 指定了节点，直接只处理这一个节点的
-              continue;
-            }
-            // copy 一个新的，只更新状态
-            ClusterHostDO checkedHost = new ClusterHostDO();
-            checkedHost.setId(host.getId());
-            checkedHost.setCheckTime(new Date());
-            try {
-              // rpc 检测
-              final ActorRef pingActor = ActorUtils.getRemoteActor(host.getHostname(), "pingActor");
-              PingCommand pingCommand = new PingCommand();
-              pingCommand.setMessage("ping");
-              Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
-              Future<Object> execFuture = Patterns.ask(pingActor, pingCommand, timeout);
-              ExecResult execResult = (ExecResult) Await.result(execFuture, timeout.duration());
-              if (execResult.getExecResult()) {
-                logger.info("ping host: {} success", host.getHostname());
-              } else {
-                logger.warn("ping host: {} fail, reason: {}", host.getHostname(), execResult.getExecOut());
-                throw new IllegalStateException("ping host: " + host.getHostname() + " failed.");
-              }
-              checkedHost.setHostState(HostState.RUNNING);
-              checkedHost.setManaged(MANAGED.YES);
-            } catch (Exception e) {
-              logger.warn("host: " + host.getHostname() + " rpc error, cause: " + e.getMessage());
-              checkedHost.setHostState(HostState.OFFLINE);
-            }
-            checkedHosts.add(checkedHost);
-          }
-          if (!checkedHosts.isEmpty()) {
-            clusterHostService.updateBatchById(checkedHosts);
-          }
             unhandled(msg);
         }
     }

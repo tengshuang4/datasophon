@@ -223,13 +223,7 @@ public class ClusterUserServiceImpl extends ServiceImpl<ClusterUserMapper, Clust
         createUnixUserCommand.setUsername(clusterUser.getUsername());
         createUnixUserCommand.setMainGroup(mainGroup.getGroupName());
         createUnixUserCommand.setOtherGroups(otherGroup);
-<<<<<<< HEAD
-
         Timeout timeout = new Timeout(Duration.create(600, TimeUnit.SECONDS));
-=======
-        
-        Timeout timeout = new Timeout(Duration.create(180, TimeUnit.SECONDS));
->>>>>>> upstream/dev
         Future<Object> execFuture = Patterns.ask(unixUserActor, createUnixUserCommand, timeout);
         ExecResult execResult = null;
         try {
